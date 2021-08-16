@@ -12,7 +12,6 @@ use BaconQrCode\Renderer\Eye\EyeInterface;
 use BaconQrCode\Renderer\Eye\ModuleEye;
 use BaconQrCode\Renderer\Eye\SimpleCircleEye;
 use BaconQrCode\Renderer\Eye\SquareEye;
-use BaconQrCode\Renderer\Eye\RoundedSquareEye; 
 use BaconQrCode\Renderer\Image\EpsImageBackEnd;
 use BaconQrCode\Renderer\Image\ImageBackEndInterface;
 use BaconQrCode\Renderer\Image\ImagickImageBackEnd;
@@ -503,10 +502,6 @@ class Generator
 
         if ($this->eyeStyle === 'circle') {
             return SimpleCircleEye::instance();
-        }
-
-        if ($this->eyeStyle === 'rounded-square') {
-            return RoundedSquareEye::instance();
         }
 
         return new ModuleEye($this->getModule());

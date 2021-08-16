@@ -2,7 +2,6 @@
 
 use BaconQrCode\Renderer\Eye\SimpleCircleEye;
 use BaconQrCode\Renderer\Eye\SquareEye;
-use BaconQrCode\Renderer\Eye\RoundedSquareEye;
 use BaconQrCode\Renderer\Image\EpsImageBackEnd;
 use BaconQrCode\Renderer\Image\ImagickImageBackEnd;
 use BaconQrCode\Renderer\Image\SvgImageBackEnd;
@@ -146,9 +145,6 @@ class GeneratorTest extends TestCase
 
         $generator = (new Generator)->eye('square');
         $this->assertInstanceOf(SquareEye::class, $generator->getEye());
-
-        $generator = (new Generator)->eye('rounded-square');
-        $this->assertInstanceOf(RoundedSquareEye::class, $generator->getEye());
     }
 
     public function test_invalid_eye_throws_an_exception()
