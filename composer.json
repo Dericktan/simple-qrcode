@@ -13,8 +13,14 @@
     "require": {
         "php": ">=7.2|^8.0",
       	"ext-gd": "*",
-        "bacon/bacon-qr-code": "^2.0"
+        "bacon/bacon-qr-code": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Dericktan/BaconQrCode.git"
+        }
+    ],
     "require-dev": {
         "mockery/mockery": "~1",
         "phpunit/phpunit": "~9"
