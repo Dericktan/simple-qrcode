@@ -17,8 +17,19 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:Dericktan/BaconQrCode.git"
+            "type": "package",
+            "package": {
+                "name": "bacon/bacon-qr-code",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/Dericktan/BaconQrCode.git",
+                    "type": "git",
+                    "reference": "dev-master"
+                },
+                "autoload": {
+                    "classmap": [""]
+                }
+            }
         }
     ],
     "require-dev": {
