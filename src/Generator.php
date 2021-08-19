@@ -335,7 +335,7 @@ class Generator
      */
     public function eye(string $style): self
     {
-        if (! in_array($style, ['square', 'circle'])) {
+        if (! in_array($style, ['square', 'circle', 'rounded-square'])) {
             throw new InvalidArgumentException("\$style must be square or circle. {$style} is not a valid eye style.");
         }
 
